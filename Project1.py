@@ -1,5 +1,5 @@
 import mysql.connector
-mydb=mysql.connector.connect(host="localhost",user="root",password="Ishu@80742683",database = "InventoryManagement")
+mydb=mysql.connector.connect(host="localhost",user="root",password="Ishu@80742683",database = "Inventory_Management")
 cur=mydb.cursor()
 manufacture_table='create table manufacture(manufacture_id integer(5) primary key,manufacture_date date,item_name varchar(30),no_of_items integer(5),defective_items integer(5),item_color varchar(20),company varchar(30))'
 goods_table="create table goods(goods_id integer(5) primary key,manufacture_id integer(5),item_name varchar(30),item_color varchar(20),item_price integer(5),manufactured_date date)"
